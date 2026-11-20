@@ -30,7 +30,7 @@ redirect_from:
 {% if home.research_topics.size > 0 %}
 <ul class="research-topics">
 {% for topic in home.research_topics %}
-  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{{ topic.name }}{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label }}</a>]{% else %}[{{ paper.label }}]{% endif %}{% endfor %}</li>
+  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{{ topic.name }}{% endif %}{% if topic.papers.size > 0 %}<span class="topic-papers">{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label }}</a>]{% else %}[{{ paper.label }}]{% endif %}{% endfor %}{% if topic.papers.size > 0 %}</span>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endif %}

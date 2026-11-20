@@ -159,7 +159,7 @@ $(document).ready(function () {
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
         .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
+          if (window.SITE_THEME_TOGGLE !== false && !localStorage.getItem("theme")) {
             setTheme(e.matches ? "dark" : "light");
           }
         });

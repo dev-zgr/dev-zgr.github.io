@@ -22,9 +22,9 @@ title_separator          : "-"
 name                     : &name "Hüseyin Özgür Kamalı"
 description              : &description "Personal academic website of Hüseyin Özgür Kamalı, M.Sc. student in Computer Science at Bilkent University working on AI for software engineering and code review."
 
-# Public address of the site. When you connect a custom domain, change `url`
-# to it (for example "https://ozgurkamali.com") and put the same domain in the
-# CNAME file at the repository root. Keep `baseurl` empty.
+# Public address of the site. When you connect a custom domain, set it in the
+# repository's Settings > Pages > Custom domain and change `url` here to it
+# (for example "https://ozgurkamali.com"). Keep `baseurl` empty.
 url                      : "https://dev-zgr.github.io"
 baseurl                  : ""
 repository               : "dev-zgr/dev-zgr.github.io"

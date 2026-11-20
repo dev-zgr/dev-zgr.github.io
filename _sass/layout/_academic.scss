@@ -47,6 +47,10 @@
   margin-bottom: 0.35em;
 }
 
+.topic-papers {
+  margin-left: 0.3em;
+}
+
 .news-date {
   white-space: nowrap;
 }
@@ -79,7 +83,7 @@
 
   .paper_note {
     font-size: $type-size-6;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
   }
 
   .paper_link {

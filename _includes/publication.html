@@ -25,7 +25,7 @@
       {%- endcase -%}
       {%- assign link_url = link.url -%}
       {%- unless link_url contains '://' -%}{%- assign link_url = link_url | relative_url -%}{%- endunless -%}
-      <a href="{{ link_url }}" class="paper_link"><i class="{{ icon }}" aria-hidden="true"></i> {{ link.label | default: label }}</a>
+      <a href="{{ link_url }}" class="paper_link" aria-label="{{ link.label | default: label }}: {{ pub.title | escape }}"><i class="{{ icon }}" aria-hidden="true"></i> {{ link.label | default: label }}</a>
     {%- endfor -%}
   </div>
   {% endif %}

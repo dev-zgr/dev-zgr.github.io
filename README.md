@@ -37,7 +37,7 @@ With Docker (no local Ruby needed):
 
 ```bash
 docker run --rm -v "$PWD":/app -w /app node:24-alpine npx -y uglify-js@3 assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js
-docker run --rm -p 4000:4000 -v "$PWD":/app -w /app ruby:3.1 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"
+docker run --rm -p 4000:4000 -v "$PWD":/app -w /app ruby:3.3 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"
 ```
 
 Then open http://localhost:4000.

@@ -32,18 +32,18 @@ with base_path so the result is always absolute.
   {% if page.header.image contains "://" %}
     {% assign seo_image_abs = page.header.image %}
   {% else %}
-    {% assign seo_image_abs = page.header.image | prepend: "/images/" | prepend: base_path %}
+    {% assign seo_image_abs = page.header.image | prepend: "/images/" | absolute_url %}
   {% endif %}
 {% elsif page.header.overlay_image %}
   {% if page.header.overlay_image contains "://" %}
     {% assign seo_image_abs = page.header.overlay_image %}
   {% else %}
-    {% assign seo_image_abs = page.header.overlay_image | prepend: "/images/" | prepend: base_path %}
+    {% assign seo_image_abs = page.header.overlay_image | prepend: "/images/" | absolute_url %}
   {% endif %}
 {% elsif site.og_image %}
-  {% assign seo_image_abs = site.og_image | prepend: "/images/" | prepend: base_path %}
+  {% assign seo_image_abs = site.og_image | prepend: "/images/" | absolute_url %}
 {% else %}
-  {% assign seo_image_abs = "/images/og-image.png" | prepend: base_path %}
+  {% assign seo_image_abs = "/images/og-image.png" | absolute_url %}
 {% endif %}
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
@@ -162,7 +162,7 @@ Twitter username (site.twitter.username), matching upstream behavior.
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": {{ seo_url | jsonify }},
-      "logo": {{ site.og_image | prepend: "/images/" | prepend: base_path | jsonify }}
+      "logo": {{ site.og_image | prepend: "/images/" | absolute_url | jsonify }}
     }
   </script>
 {% endif %}
