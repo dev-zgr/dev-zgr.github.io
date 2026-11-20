@@ -1,0 +1,32 @@
+{% comment %}
+  One publication entry. Called from _pages/publications.html with pub=<entry>.
+{% endcomment %}
+{% assign pub = include.pub %}
+<div class="publication">
+  <div class="paper_title">{{ pub.title }}</div>
+  <div class="paper_author">
+    {%- for author in pub.authors -%}
+      {%- if site.publication_self_names contains author -%}<span class="self-author">{{ author }}</span>{%- else -%}{{ author }}{%- endif -%}
+      {%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  </div>
+  <div class="paper_venue">{{ pub.venue | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if pub.status %} <span class="paper_status">({{ pub.status }})</span>{% endif %}</div>
+  {% if pub.note %}<div class="paper_note">{{ pub.note }}</div>{% endif %}
+  {% if pub.links.size > 0 %}
+  <div class="paper_links">
+    {%- for link in pub.links -%}
+      {%- case link.type -%}
+        {%- when "pdf" -%}{%- assign icon = "fas fa-file-pdf" -%}{%- assign label = "pdf" -%}
+        {%- when "arxiv" -%}{%- assign icon = "ai ai-arxiv" -%}{%- assign label = "arXiv" -%}
+        {%- when "doi" -%}{%- assign icon = "ai ai-doi" -%}{%- assign label = "doi" -%}
+        {%- when "code" -%}{%- assign icon = "fab fa-github" -%}{%- assign label = "code" -%}
+        {%- when "slides" -%}{%- assign icon = "fas fa-desktop" -%}{%- assign label = "slides" -%}
+        {%- else -%}{%- assign icon = "fa fa-link" -%}{%- assign label = "link" -%}
+      {%- endcase -%}
+      {%- assign link_url = link.url -%}
+      {%- unless link_url contains '://' -%}{%- assign link_url = link_url | relative_url -%}{%- endunless -%}
+      <a href="{{ link_url }}" class="paper_link"><i class="{{ icon }}" aria-hidden="true"></i> {{ link.label | default: label }}</a>
+    {%- endfor -%}
+  </div>
+  {% endif %}
+</div>

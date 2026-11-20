@@ -1,0 +1,49 @@
+---
+permalink: /
+title: "Biography"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+{% comment %}
+  The home page is built from _data/home.yml and _data/news.yml.
+  Edit the text there; this file only lays it out.
+{% endcomment %}
+{% assign home = site.data.home %}
+
+{% for paragraph in home.biography %}
+{{ paragraph | markdownify }}
+{% endfor %}
+
+{% if home.notice and home.notice != "" %}
+<div class="notice-box" role="note"><i class="{{ home.notice_icon | default: 'fa-solid fa-bullhorn' }}" aria-hidden="true"></i> {{ home.notice | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+{% endif %}
+
+<h1 id="research">{{ home.research_title | default: "Research" }}</h1>
+
+{% for paragraph in home.research %}
+{{ paragraph | markdownify }}
+{% endfor %}
+
+{% if home.research_topics.size > 0 %}
+<ul class="research-topics">
+{% for topic in home.research_topics %}
+  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{{ topic.name }}{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label }}</a>]{% else %}[{{ paper.label }}]{% endif %}{% endfor %}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if home.research_after %}
+{{ home.research_after | markdownify }}
+{% endif %}
+
+<h1 id="news">{{ home.news_title | default: "News" }}</h1>
+
+<ul class="news-list">
+{% for item in site.data.news %}
+  {% if home.news_limit > 0 and forloop.index > home.news_limit %}{% break %}{% endif %}
+  <li><span class="news-date">[{{ item.date }}]</span> {{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+{% endfor %}
+</ul>

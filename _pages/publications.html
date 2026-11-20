@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% comment %}
+  Built from _data/publications.yml. Add or edit papers there.
+{% endcomment %}
+
+{% if site.author.googlescholar and site.author.googlescholar != "" %}
+<p>You can also find my papers on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
+{% endif %}
+
+{% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
+{% for year in years %}
+<h2 class="publication-year" id="y{{ year }}">{{ year }}</h2>
+  {% for pub in site.data.publications %}
+    {% if pub.year == year %}
+      {% include publication.html pub=pub %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

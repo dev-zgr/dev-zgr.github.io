@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Academic home and publications page
+   Colors come from CSS variables set in assets/css/main.scss, which reads
+   theme_colors in _config.yml.
+   ========================================================================== */
+
+/* Menu: the site title and the current page keep the menu color */
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--site-menu-color);
+  border-bottom-color: var(--site-menu-color);
+}
+
+/* Round profile photo, as on the reference site */
+.author__avatar img {
+  border-radius: 50%;
+}
+
+/* Section headings on the home page (Research, News) */
+.page__content > h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: $type-size-3;
+  border-bottom: none;
+}
+
+/* Red notice box under the biography */
+.notice-box {
+  margin: 0 0 1.25em;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--site-notice-background);
+  color: var(--site-menu-color);
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  i {
+    margin-right: 0.25em;
+  }
+}
+
+.research-topics li,
+.news-list li {
+  margin-bottom: 0.35em;
+}
+
+.news-date {
+  white-space: nowrap;
+}
+
+/* Publications page */
+.archive {
+  .publication-year {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .publication {
+    margin-bottom: 1.4em;
+    line-height: 1.5;
+  }
+
+  .paper_title {
+    font-size: 1.125em;
+    font-weight: 500;
+  }
+
+  .paper_author .self-author {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .paper_status {
+    color: var(--site-menu-color);
+  }
+
+  .paper_note {
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+  }
+
+  .paper_link {
+    margin-right: 0.9em;
+    white-space: nowrap;
+    color: var(--site-link-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Footer at the end of the page instead of fixed to the window */
+.page__footer {
+  position: relative;
+  bottom: auto;
+}

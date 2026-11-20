@@ -1,0 +1,69 @@
+# Publications page. Entries are grouped by `year` (newest year first) and keep
+# the order written here inside each year.
+#
+#   title    : paper title
+#   authors  : list of author names; names listed in `publication_self_names`
+#              in _config.yml are highlighted automatically
+#   venue    : venue line (Markdown allowed)
+#   status   : optional short note in red, e.g. "Under review", "Major revision"
+#   note     : optional extra note, e.g. "Equal contribution"
+#   links    : list of buttons; `type` picks the icon: pdf, arxiv, doi, code, slides, link
+#              Local files go in /files/ and are written as "/files/name.pdf".
+
+- year: 2026
+  title: "Localizing Tangled Lines: Leveraging Large Language and Decision Models to Detect Unrelated Lines"
+  authors: ["Delfin Eryılmaz", "Hüseyin Özgür Kamalı", "Eray Tüzün"]
+  venue: "SANER'27 Registered Reports: IEEE International Conference on Software Analysis, Evolution and Reengineering"
+  status: "Under review"
+  links:
+    - type: pdf
+      url: "/files/localizing-tangled-lines.pdf"
+
+- year: 2026
+  title: "Do Agent Skills Improve Agentic Code Review?"
+  authors: ["Arda Sarıtaş", "Hüseyin Özgür Kamalı", "Eray Tüzün"]
+  venue: "JAWs 2 @ ASE'26: 2nd Journal Ahead Workshop, co-located with the IEEE/ACM International Conference on Automated Software Engineering"
+  links:
+    - type: pdf
+      url: "/files/do-agent-skills-improve-agentic-code-review.pdf"
+
+- year: 2026
+  title: "Fine-Tuning Large Language Models to Classify Pull Request-Issue Alignments: Going Beyond Prompting"
+  authors: ["Mustafa Yasir Altunhan", "Hüseyin Özgür Kamalı", "Eray Tüzün"]
+  venue: "Empirical Software Engineering (EMSE)"
+  status: "Under review, major revision"
+  note: "Equal contribution of the first two authors"
+  links:
+    - type: arxiv
+      url: "https://arxiv.org/abs/2609.01087"
+
+- year: 2026
+  title: "Rethinking Code Review in the Age of AI: A Vision for Agentic Code Review"
+  authors: ["Hüseyin Özgür Kamalı", "Erdem Tuna", "Vahid Haratian", "Eray Tüzün"]
+  venue: "Journal of Systems and Software (JSS)"
+  status: "Under review"
+  links:
+    - type: arxiv
+      url: "https://arxiv.org/abs/2605.17548"
+
+- year: 2026
+  title: "Toward Agentic Code Review: Reimagining the Process in the AI Era"
+  authors: ["Hüseyin Özgür Kamalı", "Vahid Haratian", "Erdem Tuna", "Eray Tüzün"]
+  venue: "JAWs @ ICSE'26: Journal Ahead Workshop, co-located with the IEEE/ACM International Conference on Software Engineering"
+  links: []
+
+- year: 2026
+  title: "Domain-Adaptive Sentiment and Topic Analysis Using LLMs in Low-Resource Language: A Case Study on Turkish Airport Reviews"
+  authors: ["Ali Berkay Görgülü", "Hüseyin Özgür Kamalı", "Zülal Öz", "Görkem Mert", "Rukiye Savran Kızıltepe", "Murat Karakuş", "Arwa M. Basbrain"]
+  venue: "IEEE Access, vol. 14, pp. 86868-86892"
+  links:
+    - type: doi
+      url: "https://doi.org/10.1109/ACCESS.2026.3699598"
+
+- year: 2026
+  title: "Smart Parking Optimization with Software Defined Networking and Blockchain: SPOSChain"
+  authors: ["Hüseyin Özgür Kamalı", "Ali Berkay Görgülü", "Murat Karakuş", "Evrim Güler", "Süleyman Uludağ"]
+  venue: "Journal of Network and Computer Applications (JNCA), vol. 247, Art. no. 104414"
+  links:
+    - type: doi
+      url: "https://doi.org/10.1016/j.jnca.2025.104414"

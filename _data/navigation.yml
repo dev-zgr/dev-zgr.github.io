@@ -1,0 +1,9 @@
+# Top menu, left to right. The site title (your name) is always first and
+# links to the home page. Internal pages start with "/", external links with "http".
+
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /files/cv.pdf

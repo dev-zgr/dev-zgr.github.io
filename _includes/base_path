@@ -1,0 +1,1 @@
+{% comment %}Root-relative base path, so the site works on github.io and on a custom domain without changes.{% endcomment %}{% assign base_path = site.baseurl %}

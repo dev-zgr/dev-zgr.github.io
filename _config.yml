@@ -1,0 +1,223 @@
+# =============================================================================
+#  Site configuration
+#
+#  Most things you will want to change live in four places:
+#    _config.yml            (this file)  name, sidebar links, colors, CV file
+#    _data/home.yml          biography, notice box and research text on the home page
+#    _data/news.yml          news items on the home page
+#    _data/publications.yml  publications page (grouped by year automatically)
+#    _data/navigation.yml    top menu
+#
+#  This file is NOT reloaded by `jekyll serve`; restart the server after editing it.
+#  To hide a sidebar line, leave the value after the colon empty (do not write "").
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+#  Basic site settings
+# -----------------------------------------------------------------------------
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Hüseyin Özgür Kamalı"           # shown at the top-left of the menu
+title_separator          : "-"
+name                     : &name "Hüseyin Özgür Kamalı"
+description              : &description "Personal academic website of Hüseyin Özgür Kamalı, M.Sc. student in Computer Science at Bilkent University working on AI for software engineering and code review."
+
+# Public address of the site. When you connect a custom domain, change `url`
+# to it (for example "https://ozgurkamali.com") and put the same domain in the
+# CNAME file at the repository root. Keep `baseurl` empty.
+url                      : "https://dev-zgr.github.io"
+baseurl                  : ""
+repository               : "dev-zgr/dev-zgr.github.io"
+
+# -----------------------------------------------------------------------------
+#  Colors (hex codes). Change them here; nothing else needs to be edited.
+#    menu : top menu links and the notice box text (Tianyi Zhang's site: #a51c30)
+#    link : links in the text and on the publications page (his site: #4e88c7)
+# -----------------------------------------------------------------------------
+theme_colors:
+  menu                   : "#a51c30"
+  link                   : "#4e88c7"
+  notice_background      : "#f2dede"
+
+# Light/dark switch in the menu. false = always light, like the reference site.
+theme_toggle             : false
+
+# -----------------------------------------------------------------------------
+#  Sidebar (left column). Leave a field empty and its line disappears.
+# -----------------------------------------------------------------------------
+author:
+  avatar           : "profile.jpg"                  # file in /images/
+  name             : "Hüseyin Özgür Kamalı"
+  pronouns         :
+  bio              : "M.Sc. Student, Department of Computer Science, Bilkent University"
+  location         : "Ankara, Türkiye"
+  employer         :
+  uri              :
+  email            : "ozgurkamali@bilkent.edu.tr"
+
+  # Academic profiles (full URLs)
+  googlescholar    :                                # e.g. "https://scholar.google.com/citations?user=XXXXXXXX"
+  orcid            :                                # e.g. "https://orcid.org/0000-0000-0000-0000"
+  arxiv            :
+  semantic         :
+  researchgate     :
+  academia         :
+  inspire-hep      :
+  impactstory      :
+  ssrn             :
+  pubmed           :
+  scopus           :
+  zotero           :
+
+  # Code and social (user names only, not URLs)
+  github           : "dev-zgr"
+  linkedin         : "özgür-kamalı"
+  twitter          :
+  bluesky          :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  kaggle           :
+  stackoverflow    :
+  artstation       :
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
+
+# Name forms that are highlighted in author lists on the publications page.
+publication_self_names:
+  - "Hüseyin Özgür Kamalı"
+
+# -----------------------------------------------------------------------------
+#  Site settings
+# -----------------------------------------------------------------------------
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+comments:
+  provider               : false
+atom_feed:
+  hide                   : true
+
+# SEO
+google_site_verification :
+bing_site_verification   :
+
+# Social sharing
+twitter:
+  username               :
+og_image                 : profile.jpg
+og_description           : *description
+social:
+  type                   : Person
+  name                   : *name
+  links:
+    - "https://github.com/dev-zgr"
+
+# Analytics
+analytics:
+  provider               : false
+
+# -----------------------------------------------------------------------------
+#  Build settings (rarely need changes)
+# -----------------------------------------------------------------------------
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .idea
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - config
+  - docker-compose.yaml
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - README.md
+  - tmp
+  - vendor
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  header_links: false
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: Europe/Istanbul
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: development

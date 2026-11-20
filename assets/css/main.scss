@@ -1,0 +1,55 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+
+    "layout/academic"
+;
+
+/*
+ * Colors from _config.yml (theme_colors). Edit them there, not here.
+ */
+:root {
+  --site-menu-color         : {{ site.theme_colors.menu | default: "#a51c30" }};
+  --site-link-color         : {{ site.theme_colors.link | default: "#4e88c7" }};
+  --site-notice-background  : {{ site.theme_colors.notice_background | default: "#f2dede" }};
+
+  --global-masthead-link-color        : var(--site-menu-color);
+  --global-masthead-link-color-hover  : color-mix(in srgb, var(--site-menu-color) 75%, #000);
+  --global-link-color                 : var(--site-link-color);
+  --global-link-color-hover           : color-mix(in srgb, var(--site-link-color) 75%, #000);
+  --global-link-color-visited         : var(--site-link-color);
+}
