@@ -1,0 +1,30 @@
+---
+permalink: /experience/
+title: "Experience"
+author_profile: true
+---
+
+{% comment %} Content: _data/experience.yml {% endcomment %}
+{% for group in site.data.experience %}
+<h2 class="cv-group">{{ group.group }}</h2>
+{% if group.note %}<p class="cv-group__note">{% include md-inline.html text=group.note %}</p>{% endif %}
+<div class="cv-list">
+{% for e in group.entries %}
+  <div class="cv-entry">
+    <div class="cv-entry__body">
+      <div class="cv-entry__head">
+        <span class="cv-entry__title">{{ e.title }}</span>
+        <span class="cv-entry__dates">{{ e.dates }}</span>
+      </div>
+      <div class="cv-entry__sub">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}{% if e.location %} <span class="cv-entry__muted">— {{ e.location }}</span>{% endif %}</div>
+      {% if e.summary %}<p class="cv-entry__summary">{% include md-inline.html text=e.summary %}</p>{% endif %}
+      {% if e.bullets.size > 0 %}
+      <ul class="cv-entry__bullets">
+        {% for b in e.bullets %}<li>{% include md-inline.html text=b %}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endfor %}

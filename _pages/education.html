@@ -1,0 +1,26 @@
+---
+permalink: /education/
+title: "Education"
+author_profile: true
+---
+
+{% comment %} Content: _data/education.yml {% endcomment %}
+<div class="cv-list">
+{% for item in site.data.education %}
+  <div class="cv-entry{% if item.logo %} cv-entry--logo{% endif %}">
+    {% if item.logo %}<img class="cv-entry__logo" src="{{ '/images/logos/' | append: item.logo | relative_url }}" alt="{{ item.institution }} logo" width="64" height="64" loading="lazy">{% endif %}
+    <div class="cv-entry__body">
+      <div class="cv-entry__head">
+        <span class="cv-entry__title">{% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}</span>
+        <span class="cv-entry__dates">{{ item.dates }}</span>
+      </div>
+      <div class="cv-entry__sub">{{ item.degree }}{% if item.location %} <span class="cv-entry__muted">— {{ item.location }}</span>{% endif %}</div>
+      {% if item.details.size > 0 %}
+      <ul class="cv-entry__bullets">
+        {% for d in item.details %}<li>{% include md-inline.html text=d %}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>

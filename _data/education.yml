@@ -1,0 +1,24 @@
+# Education page (/education/). Newest first.
+# logo: file in /images/logos/ (optional). url: institution page (optional).
+# details: bullet points; Markdown links are allowed.
+
+- institution: "Bilkent University"
+  url: "https://w3.cs.bilkent.edu.tr/en/"
+  logo: "bilkent.png"
+  degree: "M.Sc. in Computer Science"
+  location: "Ankara, Turkey"
+  dates: "Aug 2026 – Expected Jun 2028"
+  details:
+    - "Advisor: [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)"
+    - "Member of the [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group"
+    - "Scholarship holder in the TÜBİTAK 1001 project 125E371"
+
+- institution: "Ankara University"
+  url: "https://eng.ankara.edu.tr/en/"
+  logo: "ankara-university.png"
+  degree: "B.Sc. in Software Engineering"
+  location: "Ankara, Turkey"
+  dates: "Sep 2022 – Jun 2026"
+  details:
+    - "GPA: 3.71 / 4.00"
+    - "Ranked 2<sup>nd</sup> in the department ([certificate](/files/ankara-university-certificate-of-achievement.pdf))"

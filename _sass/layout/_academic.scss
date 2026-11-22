@@ -24,13 +24,14 @@
   border-bottom: none;
 }
 
-/* Red notice box under the biography */
+/* Notice box under the biography */
 .notice-box {
   margin: 0 0 1.25em;
   padding: 15px;
   border-radius: 4px;
+  border-left: 4px solid var(--site-menu-color);
   background-color: var(--site-notice-background);
-  color: var(--site-menu-color);
+  color: var(--site-notice-text);
 
   a {
     color: inherit;
@@ -96,10 +97,135 @@
       text-decoration: underline;
     }
   }
+
+  /* Icon colors per link type (theme_colors in _config.yml) */
+  .paper_link--pdf i   { color: var(--site-pdf-color); }
+  .paper_link--arxiv i { color: var(--site-arxiv-color); }
+  .paper_link--doi i   { color: var(--site-doi-color); }
+  .paper_link--code i  { color: var(--site-code-color); }
+}
+
+/* A link that is always underlined (e.g. "graduated 2nd" in the biography) */
+a.underline-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Education, Experience and Other pages */
+.cv-group {
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  font-size: $type-size-4;
+  border-bottom: none;
+}
+
+.cv-group__note {
+  margin: 0 0 0.5em;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.cv-entry {
+  display: flex;
+  gap: 1.1em;
+  padding: 1.1em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.cv-entry__logo {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cv-entry__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.cv-entry__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1em;
+}
+
+.cv-entry__title {
+  font-weight: 600;
+  font-size: 1.05em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cv-entry__dates {
+  white-space: nowrap;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.cv-entry__sub {
+  margin-top: 0.1em;
+}
+
+.cv-entry__muted {
+  color: var(--global-text-color-light);
+}
+
+.cv-entry__summary {
+  margin: 0.45em 0 0;
+  font-size: $type-size-6;
+}
+
+.cv-entry__bullets {
+  margin: 0.4em 0 0;
+  font-size: $type-size-6;
+
+  li {
+    margin-bottom: 0.2em;
+  }
+}
+
+.other-list li {
+  margin-bottom: 0.4em;
+}
+
+/* Footer: three columns (name, contact, copyright) */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 2.5em;
+  font-size: $type-size-6;
+  line-height: 1.6;
+
+  a {
+    color: inherit;
+  }
+}
+
+.site-footer__col {
+  flex: 1 1 14em;
+}
+
+.site-footer__muted {
+  color: var(--global-text-color-light);
 }
 
 /* Footer at the end of the page instead of fixed to the window */
 .page__footer {
   position: relative;
   bottom: auto;
+  border-top: 1px solid var(--site-menu-color);
 }

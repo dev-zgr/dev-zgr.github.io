@@ -2,8 +2,17 @@
 # links to the home page. Internal pages start with "/", external links with "http".
 
 main:
+  - title: "Education"
+    url: /education/
+
+  - title: "Experience"
+    url: /experience/
+
   - title: "Publications"
     url: /publications/
 
   - title: "CV"
     url: /files/cv.pdf
+
+  - title: "Other"
+    url: /other/

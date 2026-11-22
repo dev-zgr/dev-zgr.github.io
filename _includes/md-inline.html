@@ -1,0 +1,2 @@
+{%- comment -%} Renders a short Markdown string inline (no surrounding <p>). Use: include md-inline.html text=... {%- endcomment -%}
+{{- include.text | markdownify | remove: '<p>' | remove: '</p>' | strip -}}

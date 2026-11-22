@@ -1,0 +1,39 @@
+# Other page (/other/). Each group is a heading with a list of items.
+# `label` is shown in bold, `text` after it; both accept Markdown links.
+
+- group: "Honors and Awards"
+  items:
+    - label: "2<sup>nd</sup> Rank Graduate, Ankara University (2026)"
+      text: "Graduated 2<sup>nd</sup> in the Department of Software Engineering ([certificate](/files/ankara-university-certificate-of-achievement.pdf))."
+    - label: "TEKNOFEST 2024 Finalist"
+      text: "Reached the final stage with ArticleChain, a blockchain-based decentralized academic publishing platform."
+
+- group: "Research Grants and Projects"
+  items:
+    - label: "TÜBİTAK 1005 (2026, accepted)"
+      text: "Wrote the proposal of Dr. Eray Tüzün's project on an on-premise AI-supported code review platform that covers the whole pull request lifecycle."
+    - label: "TÜBİTAK 1001 (125E371, 2026 – Present)"
+      text: "Scholarship holder in the project *AI-Assisted Bug Reporting and Validity Analysis*."
+    - label: "TÜBİTAK 1005 (125E350, 2025 – 2026)"
+      text: "Contributed to the proposal of a funded project on a human voice-based feedback analysis system."
+    - label: "Ankara University BAP (FLO-2025-3966, 2025 – 2026)"
+      text: "Funding to set up the feedback analysis platform at Ankara University."
+
+- group: "Academic Service"
+  items:
+    - label: "Sub-reviewer"
+      text: "ICSE 2025, ICSE 2026, FSE 2026 and ESEM 2026 (with Dr. Eray Tüzün)."
+
+- group: "Memberships"
+  items:
+    - label: "ACM"
+      text: "Student Member"
+    - label: "IEEE"
+      text: "Student Member"
+
+- group: "Languages"
+  items:
+    - label: "Turkish"
+      text: "Native"
+    - label: "English"
+      text: "C1 (TOEFL iBT)"

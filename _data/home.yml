@@ -9,39 +9,34 @@ biography:
     My name is Hüseyin Özgür Kamalı and currently I am a first year M.Sc. student in Computer Science at
     [Bilkent University](https://w3.cs.bilkent.edu.tr/en/) under the supervision of
     [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en) in the
-    [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group. Before that, I graduated 2<sup>nd</sup> in my class
+    [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group. Before that, I
+    <a class="underline-link" href="/files/ankara-university-certificate-of-achievement.pdf">graduated 2<sup>nd</sup> in my class</a>
     with a GPA of 3.71 from the Software Engineering program at Ankara University in June 2026.
   - >-
-    I have been doing research for more than three years and over these years I worked with three research groups
-    in computer networks, NLP and software engineering. My first research experience was at the
-    [CRADLE Lab](https://cradlelab.us) of [Dr. Süleyman Uludağ](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en)
-    at the University of Michigan-Flint and I worked remotely on a smart parking system built on SDN and blockchain.
-    At the end of my second year I also joined the [ANLAM-NET](https://anlamnet.ankara.edu.tr/en/mainpage/) NLP lab
-    at Ankara University with [Dr. Murat Karakuş](https://scholar.google.com/citations?user=fGkZEUsAAAAJ&hl=en)
-    and worked on fine-tuning small open-source LLMs for Turkish feedback analysis.
-  - >-
-    I joined BILSEN in June 2025 while I was still an undergraduate. At BILSEN I first worked on classifying
-    pull request (PR)-issue alignment with fine-tuned LLMs and then wrote a vision paper with Dr. Tüzün about an
-    agentic code review system that lets agents do the analysis and humans keep the control points. Currently, I lead
-    BILSEN's industrial case studies with Turkish Airlines and Fibabanka and I mentor undergraduate researchers
-    who work with me on agent skills for code review, tangled line localization and GUI bug detection with multi-agent systems.
+    My first research experience was at the [CRADLE Lab](https://cradlelab.us) of
+    [Dr. Süleyman Uludağ](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en) at the University of Michigan-Flint
+    and I worked remotely on SDN and blockchain-based networks. I joined BILSEN in June 2025 while I was still an
+    undergraduate. Currently, I lead BILSEN's industrial case studies with
+    [Turkish Airlines](https://www.turkishairlines.com/en-int/) and [Fibabanka](https://www.fibabanka.com.tr/en)
+    and I mentor undergraduate researchers who work with me on agent skills for code review, tangled line
+    localization and GUI bug detection with multi-agent systems.
 
-# Highlighted box under the biography (the red box on the reference site).
-# Set `notice:` to an empty value to hide it.
+# Highlighted box under the biography. Set `notice:` to an empty value to hide it.
 notice_icon: "fa-solid fa-bullhorn"
-notice: "I am applying to Ph.D. programs for Fall 2027."
+notice: "I am looking for Ph.D. positions in the United States for Fall 2027."
 
 research_title: "Research"
 
 research:
   - >-
-    My research is at the intersection of Software Engineering and AI. I am mainly interested in how LLMs and
-    coding agents change software engineering processes like code review and how we can evaluate these tools
-    empirically, both on open-source data and in industry with real developers.
+    My research is in Software Engineering. I am mainly interested in how LLMs and coding agents change software
+    engineering processes like code review and how we can evaluate these tools empirically, both on open-source
+    data and in industry with real developers.
   - >-
     Currently I am working on the following topics.
 
-# Each topic is one bullet. `papers` adds the [VENUE] tags after it; `url` is optional.
+# Each topic is one bullet. `name` accepts Markdown links. `papers` adds the
+# [VENUE] tags after it; `url` is optional.
 research_topics:
   - name: "Agentic code review"
     papers:
@@ -56,13 +51,16 @@ research_topics:
         url: "https://arxiv.org/abs/2609.01087"
       - label: "SANER'27 RR (under review)"
         url: "/files/localizing-tangled-lines.pdf"
-  - name: "Industrial case studies of LLM-based tools (Turkish Airlines and Fibabanka)"
+  - name: >-
+      Empirical and human-centered industrial case studies, where we evaluate LLM-based tools with the developers
+      who use them at [Turkish Airlines](https://www.turkishairlines.com/en-int/) and
+      [Fibabanka](https://www.fibabanka.com.tr/en)
     papers: []
 
 research_after: >-
-  Before software engineering, I worked on fine-tuning LLMs for a low-resource language
-  ([IEEE Access'26](https://doi.org/10.1109/ACCESS.2026.3699598)) and on optimization for SDN and blockchain-based
-  smart parking ([JNCA'26](https://doi.org/10.1016/j.jnca.2025.104414)).
+  Before software engineering, I worked on integer linear optimization for software-defined networks (SDN) and
+  blockchain ([JNCA'26](https://doi.org/10.1016/j.jnca.2025.104414)) and on fine-tuning LLMs for a low-resource
+  language ([IEEE Access'26](https://doi.org/10.1109/ACCESS.2026.3699598)).
 
 news_title: "News"
 # Number of news items shown on the home page (0 = all).

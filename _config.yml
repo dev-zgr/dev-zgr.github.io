@@ -6,6 +6,9 @@
 #    _data/home.yml          biography, notice box and research text on the home page
 #    _data/news.yml          news items on the home page
 #    _data/publications.yml  publications page (grouped by year automatically)
+#    _data/education.yml     Education page
+#    _data/experience.yml    Experience page
+#    _data/other.yml         Other page (awards, grants, service, memberships)
 #    _data/navigation.yml    top menu
 #
 #  This file is NOT reloaded by `jekyll serve`; restart the server after editing it.
@@ -31,13 +34,21 @@ repository               : "dev-zgr/dev-zgr.github.io"
 
 # -----------------------------------------------------------------------------
 #  Colors (hex codes). Change them here; nothing else needs to be edited.
-#    menu : top menu links and the notice box text (Tianyi Zhang's site: #a51c30)
-#    link : links in the text and on the publications page (his site: #4e88c7)
+#    menu              : site title, top menu and status labels (blue of the paper figures)
+#    link              : links in the text and on the publications page
+#    notice_background : background of the notice box on the home page
+#    notice_text       : text of the notice box
+#    pdf / arxiv / doi / code : icon colors of the publication links
 # -----------------------------------------------------------------------------
 theme_colors:
-  menu                   : "#a51c30"
+  menu                   : "#00629B"
   link                   : "#4e88c7"
-  notice_background      : "#f2dede"
+  notice_background      : "#E3EEF5"
+  notice_text            : "#004B78"
+  pdf                    : "#D41153"
+  arxiv                  : "#B31B1B"
+  doi                    : "#FCB425"
+  code                   : "#24292F"
 
 # Light/dark switch in the menu. false = always light, like the reference site.
 theme_toggle             : false
@@ -50,7 +61,7 @@ author:
   name             : "Hüseyin Özgür Kamalı"
   pronouns         :
   bio              : "M.Sc. Student, Department of Computer Science, Bilkent University"
-  location         : "Ankara, Türkiye"
+  location         : "Ankara, Turkey"
   employer         :
   uri              :
   email            : "ozgurkamali@bilkent.edu.tr"
@@ -101,6 +112,15 @@ author:
   xing             :
   youtube          :
   zhihu            :
+
+# Footer (bottom of every page). The name and email come from `author` above.
+footer:
+  affiliation:
+    - "Department of Computer Science"
+    - "Bilkent University"
+  address:
+    - "Office: EA 505"
+    - "Bilkent University, 06800 Ankara, Turkey"
 
 # Name forms that are highlighted in author lists on the publications page.
 publication_self_names:

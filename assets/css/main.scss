@@ -43,9 +43,14 @@
  * Colors from _config.yml (theme_colors). Edit them there, not here.
  */
 :root {
-  --site-menu-color         : {{ site.theme_colors.menu | default: "#a51c30" }};
+  --site-menu-color         : {{ site.theme_colors.menu | default: "#00629B" }};
   --site-link-color         : {{ site.theme_colors.link | default: "#4e88c7" }};
-  --site-notice-background  : {{ site.theme_colors.notice_background | default: "#f2dede" }};
+  --site-notice-background  : {{ site.theme_colors.notice_background | default: "#E3EEF5" }};
+  --site-notice-text        : {{ site.theme_colors.notice_text | default: site.theme_colors.menu }};
+  --site-pdf-color          : {{ site.theme_colors.pdf | default: "#D41153" }};
+  --site-arxiv-color        : {{ site.theme_colors.arxiv | default: "#B31B1B" }};
+  --site-doi-color          : {{ site.theme_colors.doi | default: "#FCB425" }};
+  --site-code-color         : {{ site.theme_colors.code | default: "#24292F" }};
 
   --global-masthead-link-color        : var(--site-menu-color);
   --global-masthead-link-color-hover  : color-mix(in srgb, var(--site-menu-color) 75%, #000);
