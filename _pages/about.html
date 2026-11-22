@@ -30,7 +30,7 @@ redirect_from:
 {% if home.research_topics.size > 0 %}
 <ul class="research-topics">
 {% for topic in home.research_topics %}
-  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{% include md-inline.html text=topic.name %}{% endif %}{% if topic.papers.size > 0 %}<span class="topic-papers">{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label | smartify }}</a>]{% else %}[{{ paper.label | smartify }}]{% endif %}{% unless forloop.last %} {% endunless %}{% endfor %}{% if topic.papers.size > 0 %}</span>{% endif %}</li>
+  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{% include md-inline.html text=topic.name %}{% endif %}{% if topic.papers.size > 0 %}<span class="topic-papers">{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label | smartify }}</a>]{% else %}[{{ paper.label | smartify }}]{% endif %}{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if topic.papers.size > 0 %}</span>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endif %}
