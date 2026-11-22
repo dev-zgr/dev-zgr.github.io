@@ -38,6 +38,7 @@ repository               : "dev-zgr/dev-zgr.github.io"
 #    link              : links in the text and on the publications page
 #    notice_background : background of the notice box on the home page
 #    notice_text       : text of the notice box
+#    footer_line       : line above the footer (line color of the paper figures)
 #    pdf / arxiv / doi / code : icon colors of the publication links
 # -----------------------------------------------------------------------------
 theme_colors:
@@ -45,6 +46,7 @@ theme_colors:
   link                   : "#4e88c7"
   notice_background      : "#E3EEF5"
   notice_text            : "#004B78"
+  footer_line            : "#005080"
   pdf                    : "#D41153"
   arxiv                  : "#B31B1B"
   doi                    : "#FCB425"

@@ -47,6 +47,7 @@
   --site-link-color         : {{ site.theme_colors.link | default: "#4e88c7" }};
   --site-notice-background  : {{ site.theme_colors.notice_background | default: "#E3EEF5" }};
   --site-notice-text        : {{ site.theme_colors.notice_text | default: site.theme_colors.menu }};
+  --site-footer-line        : {{ site.theme_colors.footer_line | default: "#005080" }};
   --site-pdf-color          : {{ site.theme_colors.pdf | default: "#D41153" }};
   --site-arxiv-color        : {{ site.theme_colors.arxiv | default: "#B31B1B" }};
   --site-doi-color          : {{ site.theme_colors.doi | default: "#FCB425" }};
