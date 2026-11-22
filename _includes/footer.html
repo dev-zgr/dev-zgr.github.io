@@ -1,17 +1,15 @@
 {% comment %}
-  Footer: contact details from _config.yml (author and footer), copyright and
-  the build date. Edit the text in _config.yml, not here.
+  Footer: contact details on the left, copyright and build date on the right.
+  Edit the text in _config.yml (author and footer), not here.
 {% endcomment %}
 <div class="site-footer">
-  <div class="site-footer__col">
+  <div class="site-footer__left">
     {{ site.author.name }}<br>
-    {% for line in site.footer.affiliation %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
-  </div>
-  <div class="site-footer__col site-footer__muted">
+    {% for line in site.footer.affiliation %}{{ line }}<br>{% endfor %}
     {% if site.author.email %}Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>{% endif %}
     {% for line in site.footer.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
   </div>
-  <div class="site-footer__col site-footer__muted">
+  <div class="site-footer__right">
     &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.<br>
     Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
     Site last updated {{ site.time | date: '%B %-d, %Y' }}.
