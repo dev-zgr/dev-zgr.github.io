@@ -117,9 +117,7 @@ a.underline-link {
 /* Education, Experience and Other pages */
 .cv-group {
   margin-top: 1.5em;
-  margin-bottom: 0.4em;
-  font-size: $type-size-4;
-  border-bottom: none;
+  margin-bottom: 0.5em;
 }
 
 .page__content .cv-group__note {
@@ -198,7 +196,7 @@ a.underline-link {
   margin-bottom: 0.4em;
 }
 
-/* Footer: contact on the left, copyright on the right (colors and size as in the theme) */
+/* Footer: three columns; the last one is aligned to the right edge */
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -212,17 +210,20 @@ a.underline-link {
   }
 }
 
-.site-footer__right {
+.site-footer__col--right {
   text-align: right;
 }
 
-@media (max-width: 600px) {
-  .site-footer__right {
+@media (max-width: 700px) {
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .site-footer__col--right {
     text-align: left;
   }
 }
 
-/* Footer at the end of the page instead of fixed to the window */
 /* Footer at the bottom of the window on short pages, after the content on long ones */
 body {
   display: flex;
