@@ -119,10 +119,10 @@ a.underline-link {
   border-bottom: none;
 }
 
-.cv-group__note {
-  margin: 0 0 0.5em;
+.page__content .cv-group__note {
+  margin: 0 0 0.25em;
   font-size: $type-size-6;
-  color: var(--global-text-color-light);
+  color: #6f6f6f;
 }
 
 .cv-entry {
@@ -173,7 +173,7 @@ a.underline-link {
 .cv-entry__dates {
   white-space: nowrap;
   font-size: $type-size-6;
-  color: var(--global-text-color-light);
+  color: #6f6f6f;
 }
 
 .cv-entry__sub {
@@ -181,10 +181,10 @@ a.underline-link {
 }
 
 .cv-entry__muted {
-  color: var(--global-text-color-light);
+  color: #6f6f6f;
 }
 
-.cv-entry__summary {
+.page__content .cv-entry__summary {
   margin: 0.45em 0 0;
   font-size: $type-size-6;
 }
@@ -209,6 +209,7 @@ a.underline-link {
   gap: 1em 2.5em;
   font-size: $type-size-6;
   line-height: 1.6;
+  color: var(--global-text-color);
 
   a {
     color: inherit;
@@ -220,7 +221,7 @@ a.underline-link {
 }
 
 .site-footer__muted {
-  color: var(--global-text-color-light);
+  color: #6f6f6f;
 }
 
 /* Footer at the end of the page instead of fixed to the window */
