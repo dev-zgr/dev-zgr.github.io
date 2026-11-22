@@ -14,6 +14,9 @@
 /* Round profile photo, as on the reference site */
 .author__avatar img {
   border-radius: 50%;
+  border: 4px solid var(--site-menu-color);
+  padding: 0;
+  background: #fff;
 }
 
 /* Section headings on the home page (Research, News) */
