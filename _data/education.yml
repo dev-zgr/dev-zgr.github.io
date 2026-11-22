@@ -7,7 +7,7 @@
   logo: "bilkent.png"
   degree: "M.Sc. in Computer Science"
   location: "Ankara, Turkey"
-  dates: "Aug 2026 – Expected Jun 2028"
+  dates: "Aug 2026 - Expected Jun 2028"
   details:
     - "Advisor: [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)"
     - "Member of the [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group"
@@ -18,7 +18,7 @@
   logo: "ankara-university.png"
   degree: "B.Sc. in Software Engineering"
   location: "Ankara, Turkey"
-  dates: "Sep 2022 – Jun 2026"
+  dates: "Sep 2022 - Jun 2026"
   details:
     - "GPA: 3.71 / 4.00"
     - "Ranked 2<sup>nd</sup> in the department ([certificate](/files/ankara-university-certificate-of-achievement.pdf))"

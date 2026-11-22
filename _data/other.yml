@@ -12,11 +12,11 @@
   items:
     - label: "TÜBİTAK 1005 (2026, accepted)"
       text: "Wrote the proposal of Dr. Eray Tüzün's project on an on-premise AI-supported code review platform that covers the whole pull request lifecycle."
-    - label: "TÜBİTAK 1001 (125E371, 2026 – Present)"
+    - label: "TÜBİTAK 1001 (125E371, 2026 - Present)"
       text: "Scholarship holder in the project *AI-Assisted Bug Reporting and Validity Analysis*."
-    - label: "TÜBİTAK 1005 (125E350, 2025 – 2026)"
+    - label: "TÜBİTAK 1005 (125E350, 2025 - 2026)"
       text: "Contributed to the proposal of a funded project on a human voice-based feedback analysis system."
-    - label: "Ankara University BAP (FLO-2025-3966, 2025 – 2026)"
+    - label: "Ankara University BAP (FLO-2025-3966, 2025 - 2026)"
       text: "Funding to set up the feedback analysis platform at Ankara University."
 
 - group: "Academic Service"

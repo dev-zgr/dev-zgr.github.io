@@ -7,7 +7,7 @@
       org: "BILSEN Research Group, Bilkent University"
       url: "https://bilsen.cs.bilkent.edu.tr"
       location: "Ankara, Turkey"
-      dates: "Jun 2025 – Present"
+      dates: "Jun 2025 - Present"
       summary: >-
         Software engineering research under the supervision of
         [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)
@@ -23,7 +23,7 @@
       org: "ANLAM-NET Research Lab, Ankara University"
       url: "https://anlamnet.ankara.edu.tr/en/mainpage/"
       location: "Ankara, Turkey"
-      dates: "Sep 2024 – Jun 2026"
+      dates: "Sep 2024 - Jun 2026"
       summary: >-
         Natural language processing research under the supervision of
         [Dr. Murat Karakuş](https://scholar.google.com/citations?user=fGkZEUsAAAAJ&hl=en).
@@ -35,7 +35,7 @@
       org: "CRADLE Lab, University of Michigan-Flint"
       url: "https://cradlelab.us"
       location: "Remote"
-      dates: "Sep 2023 – Dec 2025"
+      dates: "Sep 2023 - Dec 2025"
       summary: >-
         Research on software-defined networks (SDN) and blockchain under the supervision of
         [Dr. Süleyman Uludağ](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en).
@@ -49,7 +49,7 @@
     - title: "Collaboration Lead"
       org: "Turkish Airlines"
       url: "https://www.turkishairlines.com/en-int/"
-      dates: "Jul 2026 – Present"
+      dates: "Jul 2026 - Present"
       summary: "Agentic software engineering tools that we evaluate in the airline's development environment with its developers."
       bullets:
         - "A pull request-issue alignment extension for the airline's code review process."
@@ -58,7 +58,7 @@
     - title: "Collaboration Lead"
       org: "Fibabanka"
       url: "https://www.fibabanka.com.tr/en"
-      dates: "Jun 2026 – Present"
+      dates: "Jun 2026 - Present"
       summary: "Industrial case study of Filozof, an LLM-based requirement elicitation system developed and deployed by Fibabanka."
       bullets:
         - "Assessing the requirement artifacts it generates against IEEE requirement standards and measuring its effect on the bank's requirement process."
@@ -69,26 +69,26 @@
       org: "TÜBİTAK SAGE"
       url: "https://www.sage.tubitak.gov.tr/en"
       location: "Ankara, Turkey"
-      dates: "Aug 2025 – Oct 2025"
+      dates: "Aug 2025 - Oct 2025"
       summary: "Antenna gain approximation algorithms based on azimuth and elevation radiation patterns and a desktop simulation application in C++ and Qt."
 
     - title: "Software Engineering Intern"
       org: "OBSS"
       url: "https://obss.tech/en"
       location: "Ankara, Turkey"
-      dates: "Jun 2025 – Aug 2025"
+      dates: "Jun 2025 - Aug 2025"
       summary: "An issue tracking module for a project management application with Java, Spring and React, with LDAP authentication and JWT-based authorization."
 
     - title: "Web Page Administrator (Intern)"
       org: "Ankara University"
       url: "https://www.ankara.edu.tr/en/index"
       location: "Ankara, Turkey"
-      dates: "Jan 2024 – Jun 2024"
+      dates: "Jan 2024 - Jun 2024"
       summary: "Managed and maintained the website of the Department of Software Engineering."
 
     - title: "Software Engineering Intern"
       org: "Obrosoft"
       url: "https://obrosoft.com"
       location: "Ankara, Turkey"
-      dates: "Feb 2023 – Jun 2023"
+      dates: "Feb 2023 - Jun 2023"
       summary: "Backend REST APIs for a learning management system."

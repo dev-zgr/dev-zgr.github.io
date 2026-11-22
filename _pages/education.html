@@ -14,7 +14,7 @@ author_profile: true
         <span class="cv-entry__title">{% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}</span>
         <span class="cv-entry__dates">{{ item.dates }}</span>
       </div>
-      <div class="cv-entry__sub">{{ item.degree }}{% if item.location %} <span class="cv-entry__muted">— {{ item.location }}</span>{% endif %}</div>
+      <div class="cv-entry__sub">{{ item.degree }}{% if item.location %} <span class="cv-entry__muted">- {{ item.location }}</span>{% endif %}</div>
       {% if item.details.size > 0 %}
       <ul class="cv-entry__bullets">
         {% for d in item.details %}<li>{% include md-inline.html text=d %}</li>{% endfor %}

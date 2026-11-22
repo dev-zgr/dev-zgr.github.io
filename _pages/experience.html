@@ -16,7 +16,7 @@ author_profile: true
         <span class="cv-entry__title">{{ e.title }}</span>
         <span class="cv-entry__dates">{{ e.dates }}</span>
       </div>
-      <div class="cv-entry__sub">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}{% if e.location %} <span class="cv-entry__muted">— {{ e.location }}</span>{% endif %}</div>
+      <div class="cv-entry__sub">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}{% if e.location %} <span class="cv-entry__muted">- {{ e.location }}</span>{% endif %}</div>
       {% if e.summary %}<p class="cv-entry__summary">{% include md-inline.html text=e.summary %}</p>{% endif %}
       {% if e.bullets.size > 0 %}
       <ul class="cv-entry__bullets">
