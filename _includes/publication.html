@@ -1,19 +1,21 @@
 {% comment %}
   One publication entry. Called from _pages/publications.html with pub=<entry>.
+  Uses the shared cv-entry classes so it looks like the Education and Experience entries.
 {% endcomment %}
 {% assign pub = include.pub %}
-<div class="publication">
-  <div class="paper_title">{{ pub.title }}</div>
-  <div class="paper_author">
+<div class="cv-entry publication">
+  <div class="cv-entry__body">
+  <div class="cv-entry__title paper_title">{{ pub.title }}</div>
+  <div class="cv-entry__sub paper_author">
     {%- for author in pub.authors -%}
       {%- if site.publication_self_names contains author -%}<span class="self-author">{{ author }}</span>{%- else -%}{{ author }}{%- endif -%}
       {%- unless forloop.last -%}, {% endunless -%}
     {%- endfor -%}
   </div>
-  <div class="paper_venue">{{ pub.venue | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if pub.status %} <span class="paper_status">({{ pub.status }})</span>{% endif %}</div>
-  {% if pub.note %}<div class="paper_note">{{ pub.note }}</div>{% endif %}
+  <div class="cv-entry__sub paper_venue">{{ pub.venue | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if pub.status %} <span class="paper_status">({{ pub.status }})</span>{% endif %}</div>
+  {% if pub.note %}<div class="cv-entry__sub paper_note">{{ pub.note }}</div>{% endif %}
   {% if pub.links.size > 0 %}
-  <div class="paper_links">
+  <div class="cv-entry__sub paper_links">
     {%- for link in pub.links -%}
       {%- case link.type -%}
         {%- when "pdf" -%}{%- assign icon = "fas fa-file-pdf" -%}{%- assign label = "pdf" -%}
@@ -25,8 +27,9 @@
       {%- endcase -%}
       {%- assign link_url = link.url -%}
       {%- unless link_url contains '://' -%}{%- assign link_url = link_url | relative_url -%}{%- endunless -%}
-      <a href="{{ link_url }}" class="paper_link paper_link--{{ link.type | default: 'link' }}" aria-label="{{ link.label | default: label }}: {{ pub.title | escape }}"><i class="{{ icon }}" aria-hidden="true"></i> {{ link.label | default: label }}</a>
+      <a href="{{ link_url }}" class="paper_link paper_link--{{ link.type | default: 'link' }}" aria-label="{{ link.label | default: label }}: {{ pub.title | escape }}"><i class="{{ icon }}" aria-hidden="true"></i> <span class="paper_link__label">{{ link.label | default: label }}</span></a>
     {%- endfor -%}
   </div>
   {% endif %}
+</div>
 </div>

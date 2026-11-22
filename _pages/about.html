@@ -21,7 +21,7 @@ redirect_from:
 <div class="notice-box" role="note"><i class="{{ home.notice_icon | default: 'fa-solid fa-bullhorn' }}" aria-hidden="true"></i> {{ home.notice | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
 {% endif %}
 
-<h1 id="research">{{ home.research_title | default: "Research" }}</h1>
+<h2 class="section-heading" id="research">{{ home.research_title | default: "Research" }}</h2>
 
 {% for paragraph in home.research %}
 {{ paragraph | markdownify }}
@@ -30,7 +30,7 @@ redirect_from:
 {% if home.research_topics.size > 0 %}
 <ul class="research-topics">
 {% for topic in home.research_topics %}
-  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{% include md-inline.html text=topic.name %}{% endif %}{% if topic.papers.size > 0 %}<span class="topic-papers">{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label }}</a>]{% else %}[{{ paper.label }}]{% endif %}{% endfor %}{% if topic.papers.size > 0 %}</span>{% endif %}</li>
+  <li>{% if topic.url %}<a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>{% else %}{% include md-inline.html text=topic.name %}{% endif %}{% if topic.papers.size > 0 %}<span class="topic-papers">{% endif %}{% for paper in topic.papers %}{% if paper.url %}{% assign paper_url = paper.url %}{% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}[<a href="{{ paper_url }}">{{ paper.label | smartify }}</a>]{% else %}[{{ paper.label | smartify }}]{% endif %}{% unless forloop.last %} {% endunless %}{% endfor %}{% if topic.papers.size > 0 %}</span>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -39,7 +39,7 @@ redirect_from:
 {{ home.research_after | markdownify }}
 {% endif %}
 
-<h1 id="news">{{ home.news_title | default: "News" }}</h1>
+<h2 class="section-heading" id="news">{{ home.news_title | default: "News" }}</h2>
 
 <ul class="news-list">
 {% for item in site.data.news %}

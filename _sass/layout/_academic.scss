@@ -1,5 +1,8 @@
 /* ==========================================================================
-   Academic home and publications page
+   Academic site: one set of styles for every page
+   (home, Education, Experience, Publications, Other).
+   All pages use the `single` layout, so the page title, the section headings,
+   the entries, the lists and the links look the same everywhere.
    Colors come from CSS variables set in assets/css/main.scss, which reads
    theme_colors in _config.yml.
    ========================================================================== */
@@ -11,7 +14,7 @@
   border-bottom-color: var(--site-menu-color);
 }
 
-/* Round profile photo, as on the reference site */
+/* Round profile photo with a frame in the menu color (same on every page) */
 .author__avatar img {
   border-radius: 50%;
   border: 2px solid var(--site-menu-color);
@@ -19,23 +22,81 @@
   background: #fff;
 }
 
-/* Section headings on the home page (Research, News) */
-.page__content > h1 {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+/* --------------------------------------------------------------------------
+   Page title (h1): Biography, Education, Experience, Publications, Other
+   -------------------------------------------------------------------------- */
+.page__title {
+  margin: 0 0 0.75em;
   font-size: $type-size-3;
-  border-bottom: none;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--global-text-color);
+}
+
+/* --------------------------------------------------------------------------
+   Section headings inside a page: home Research and News, Experience and
+   Other groups, Publications years. Always <h2 class="section-heading">.
+   -------------------------------------------------------------------------- */
+.page__content h2.section-heading {
+  margin: 1.5em 0 0.5em;
+  padding-bottom: 0.3em;
+  font-size: $type-size-4;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.page__content > h2.section-heading:first-child {
+  margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Body text: one size and color for paragraphs, list items and entry lines
+   -------------------------------------------------------------------------- */
+.page__content {
+  color: var(--global-text-color);
+  line-height: 1.5;
+
+  p,
+  li {
+    font-size: 1em;
+  }
+
+  /* Links: the global link color, always underlined */
+  a {
+    color: var(--global-link-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+      text-decoration: underline;
+    }
+  }
+
+  /* Lists: same bullets and spacing on every page */
+  ul {
+    margin: 0 0 1.3em;
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+
+  li {
+    margin-bottom: 0.35em;
+  }
 }
 
 /* Notice box under the biography */
 .notice-box {
-  margin: 0 0 1.25em;
+  margin: 0 0 1.3em;
   padding: 15px;
   border-radius: 4px;
   border-left: 4px solid var(--site-menu-color);
   background-color: var(--site-notice-background);
   color: var(--site-notice-text);
 
+  .page__content & a,
   a {
     color: inherit;
     text-decoration: underline;
@@ -46,11 +107,6 @@
   }
 }
 
-.research-topics li,
-.news-list li {
-  margin-bottom: 0.35em;
-}
-
 .topic-papers {
   margin-left: 0.3em;
 }
@@ -59,69 +115,11 @@
   white-space: nowrap;
 }
 
-/* Publications page */
-.archive {
-  .publication-year {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .publication {
-    margin-bottom: 1.4em;
-    line-height: 1.5;
-  }
-
-  .paper_title {
-    font-size: 1.125em;
-    font-weight: 500;
-  }
-
-  .paper_author .self-author {
-    font-style: italic;
-    font-weight: 600;
-  }
-
-  .paper_status {
-    color: var(--site-menu-color);
-  }
-
-  .paper_note {
-    font-size: $type-size-6;
-    color: var(--global-text-color);
-  }
-
-  .paper_link {
-    margin-right: 0.9em;
-    white-space: nowrap;
-    color: var(--site-link-color);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  /* Icon colors per link type (theme_colors in _config.yml) */
-  .paper_link--pdf i   { color: var(--site-pdf-color); }
-  .paper_link--arxiv i { color: var(--site-arxiv-color); }
-  .paper_link--doi i   { color: var(--site-doi-color); }
-  .paper_link--code i  { color: var(--site-code-color); }
-}
-
-/* A link that is always underlined (e.g. "graduated 2nd" in the biography) */
-a.underline-link {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-/* Education, Experience and Other pages */
-.cv-group {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.page__content .cv-group__note {
-  margin: 0 0 0.25em;
+/* --------------------------------------------------------------------------
+   Entries: Education, Experience and Publications use the same block
+   -------------------------------------------------------------------------- */
+.cv-list {
+  margin-bottom: 1.3em;
 }
 
 .cv-entry {
@@ -129,6 +127,10 @@ a.underline-link {
   gap: 1.1em;
   padding: 1.1em 0;
   border-bottom: 1px solid var(--global-border-color);
+
+  &:first-child {
+    padding-top: 0.5em;
+  }
 
   &:last-child {
     border-bottom: none;
@@ -155,55 +157,97 @@ a.underline-link {
   column-gap: 1em;
 }
 
+/* Entry title: institution, role or paper title */
 .cv-entry__title {
+  font-size: 1em;
   font-weight: bold;
+  line-height: 1.5;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
+.page__content .cv-entry__title a {
+  color: inherit;
+  text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-.cv-entry__dates {
-  white-space: nowrap;
+/* Phones: the date always goes on its own line under the title */
+@media (max-width: 600px) {
+  .cv-entry__head {
+    flex-direction: column;
+  }
 }
 
+/* Date column (Education and Experience) */
+.cv-entry__dates {
+  font-size: 1em;
+  white-space: nowrap;
+  color: var(--global-text-color);
+}
+
+/* Lines under the title: degree, organization, authors, venue, note, links */
 .cv-entry__sub {
   margin-top: 0.1em;
-}
-
-.cv-entry__muted {
-  color: inherit;
+  font-size: 1em;
+  color: var(--global-text-color);
 }
 
 .page__content .cv-entry__summary {
   margin: 0.35em 0 0;
 }
 
-.cv-entry__bullets {
+.page__content .cv-entry__bullets {
   margin: 0.35em 0 0;
-
-  li {
-    margin-bottom: 0.2em;
-  }
 }
 
-.other-list li {
-  margin-bottom: 0.4em;
+.page__content .cv-group__note {
+  margin: 0 0 0.25em;
 }
 
-/* Footer: three columns; the last one is aligned to the right edge */
+/* Publications: highlight the user's name and color the link icons */
+.paper_author .self-author {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.paper_status {
+  color: var(--site-menu-color);
+}
+
+.paper_link {
+  margin-right: 0.9em;
+  white-space: nowrap;
+}
+
+/* Underline only the label, not the space after the icon */
+.page__content a.paper_link,
+.page__content a.paper_link:hover {
+  text-decoration: none;
+}
+
+.page__content a.paper_link .paper_link__label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.paper_link--pdf i   { color: var(--site-pdf-color); }
+.paper_link--arxiv i { color: var(--site-arxiv-color); }
+.paper_link--doi i   { color: var(--site-doi-color); }
+.paper_link--code i  { color: var(--site-code-color); }
+
+/* --------------------------------------------------------------------------
+   Footer: three columns; the last one is aligned to the right edge.
+   Stacked and left-aligned on phones.
+   -------------------------------------------------------------------------- */
 .site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   gap: 1em 2em;
   font-size: $type-size-7;
   line-height: 1.6;
+  color: #6b7176;
 
   a {
     color: inherit;
@@ -211,24 +255,34 @@ a.underline-link {
 }
 
 .site-footer__col--right {
+  justify-self: end;
   text-align: right;
 }
 
 @media (max-width: 700px) {
   .site-footer {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .site-footer__col--right {
+    justify-self: start;
     text-align: left;
   }
 }
 
-/* Footer at the bottom of the window on short pages, after the content on long ones */
+/* Footer at the very bottom of the window on short pages and right after the
+   content on long ones, with no space under it. The body is a flex column;
+   no script changes the body margin (see assets/js/_main.js). */
+html {
+  min-height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  padding-bottom: 0;
   box-sizing: border-box;
 }
 
@@ -243,5 +297,10 @@ body > #main {
   float: none;
   flex-shrink: 0;
   margin-top: 3em;
+  margin-bottom: 0;
   border-top: 2px solid var(--site-footer-line);
+}
+
+.page__footer footer {
+  margin-bottom: 0;
 }

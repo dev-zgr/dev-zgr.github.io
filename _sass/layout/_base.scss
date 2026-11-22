@@ -15,8 +15,8 @@ body {
   background-color: var(--global-bg-color);
 
   margin: 0;
+  /* no space under the footer: see the flex column rules in _academic.scss */
   padding: $masthead-height 0 0;
-  padding-bottom: 9em;
   font-family: $global-font-family;
   line-height: 1.5;
 

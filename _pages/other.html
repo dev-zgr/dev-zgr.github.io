@@ -6,7 +6,7 @@ author_profile: true
 
 {% comment %} Content: _data/other.yml {% endcomment %}
 {% for group in site.data.other %}
-<h2 class="cv-group">{{ group.group }}</h2>
+<h2 class="section-heading">{{ group.group }}</h2>
 <ul class="other-list">
   {% for item in group.items %}<li><strong>{% include md-inline.html text=item.label %}:</strong> {% include md-inline.html text=item.text %}</li>{% endfor %}
 </ul>

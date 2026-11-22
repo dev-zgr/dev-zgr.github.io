@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
@@ -7,6 +6,7 @@ author_profile: true
 
 {% comment %}
   Built from _data/publications.yml. Add or edit papers there.
+  Uses the same layout (single) and the same entry styles as the other pages.
 {% endcomment %}
 
 {% if site.author.googlescholar and site.author.googlescholar != "" %}
@@ -15,10 +15,12 @@ author_profile: true
 
 {% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
 {% for year in years %}
-<h2 class="publication-year" id="y{{ year }}">{{ year }}</h2>
+<h2 class="section-heading" id="y{{ year }}">{{ year }}</h2>
+<div class="cv-list">
   {% for pub in site.data.publications %}
     {% if pub.year == year %}
       {% include publication.html pub=pub %}
     {% endif %}
   {% endfor %}
+</div>
 {% endfor %}

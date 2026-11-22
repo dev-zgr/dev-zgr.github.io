@@ -10,14 +10,14 @@
       dates: "Jun 2025 - Present"
       summary: >-
         Software engineering research under the supervision of
-        [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)
+        [Dr. Eray Tuzun](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)
         (undergraduate researcher until June 2026).
       bullets:
         - "Leading the group's industry collaborations with Turkish Airlines and Fibabanka."
-        - "Wrote the TÜBİTAK 1005 proposal for an AI-supported code review platform based on our vision paper, which was accepted in 2026."
+        - "Wrote the TUBITAK 1005 proposal for an AI-supported code review platform based on our vision paper, which was accepted in 2026."
         - "Mentoring undergraduate researchers on agent skills for code review, tangled line localization and GUI bug detection."
         - "Worked on LLM-based pull request-issue alignment classification with fine-tuning and on a vision paper about the future of code review."
-        - "Sub-reviewer for ICSE, FSE and ESEM with Dr. Tüzün."
+        - "Sub-reviewer for ICSE, FSE and ESEM with Dr. Tuzun."
 
     - title: "Undergraduate Researcher"
       org: "ANLAM-NET Research Lab, Ankara University"
@@ -26,10 +26,10 @@
       dates: "Sep 2024 - Jun 2026"
       summary: >-
         Natural language processing research under the supervision of
-        [Dr. Murat Karakuş](https://scholar.google.com/citations?user=fGkZEUsAAAAJ&hl=en).
+        [Dr. Murat Karakus](https://scholar.google.com/citations?user=fGkZEUsAAAAJ&hl=en).
       bullets:
         - "Co-authored a paper on fine-tuning LLMs for sentiment and topic analysis in Turkish (IEEE Access)."
-        - "Took part in writing funded TÜBİTAK 1005 and Ankara University BAP proposals for LLM-based feedback analysis systems."
+        - "Took part in writing funded TUBITAK 1005 and Ankara University BAP proposals for LLM-based feedback analysis systems."
 
     - title: "Undergraduate Researcher"
       org: "CRADLE Lab, University of Michigan-Flint"
@@ -38,7 +38,7 @@
       dates: "Sep 2023 - Dec 2025"
       summary: >-
         Research on software-defined networks (SDN) and blockchain under the supervision of
-        [Dr. Süleyman Uludağ](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en).
+        [Dr. Suleyman Uludag](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en).
       bullets:
         - "Co-authored a journal article on a smart parking system built on SDN and blockchain (JNCA)."
         - "Formulated parking assignment as a fairness-driven integer optimization problem that is equivalent to parallel job scheduling (NP-hard) and evaluated heuristic solvers for it."
@@ -66,7 +66,7 @@
 - group: "Industry Experience"
   entries:
     - title: "Research & Development Intern"
-      org: "TÜBİTAK SAGE"
+      org: "TUBITAK SAGE"
       url: "https://www.sage.tubitak.gov.tr/en"
       location: "Ankara, Turkey"
       dates: "Aug 2025 - Oct 2025"

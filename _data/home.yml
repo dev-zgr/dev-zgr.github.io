@@ -1,5 +1,5 @@
 # Home page content. Text fields accept Markdown: [link text](https://...),
-# **bold**, *italic*, <sup>nd</sup>. Keep each paragraph on one line or use the
+# **bold**, *italic*. Keep each paragraph on one line or use the
 # ">-" block style shown below.
 
 # The "Biography" heading is the `title:` line in _pages/about.html.
@@ -8,13 +8,13 @@ biography:
   - >-
     My name is Hüseyin Özgür Kamalı and currently I am a first year M.Sc. student in Computer Science at
     [Bilkent University](https://w3.cs.bilkent.edu.tr/en/) under the supervision of
-    [Dr. Eray Tüzün](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en) in the
+    [Dr. Eray Tuzun](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en) in the
     [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group. Before that, I
-    <a class="underline-link" href="/files/ankara-university-certificate-of-achievement.pdf">graduated 2<sup>nd</sup> in my class</a>
+    <a class="underline-link" href="/files/ankara-university-certificate-of-achievement.pdf">graduated 2nd in my class</a>
     with a GPA of 3.71 from the Software Engineering program at Ankara University in June 2026.
   - >-
     My first research experience was at the [CRADLE Lab](https://cradlelab.us) of
-    [Dr. Süleyman Uludağ](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en) at the University of Michigan-Flint
+    [Dr. Suleyman Uludag](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en) at the University of Michigan-Flint
     and I worked remotely on SDN and blockchain-based networks. I joined BILSEN in June 2025 while I was still an
     undergraduate. Currently, I lead BILSEN's industrial case studies with
     [Turkish Airlines](https://www.turkishairlines.com/en-int/) and [Fibabanka](https://www.fibabanka.com.tr/en)
@@ -42,9 +42,9 @@ research_topics:
     papers:
       - label: "JSS (under review)"
         url: "https://arxiv.org/abs/2605.17548"
-      - label: "JAWs@ASE'26"
+      - label: "JAWs 2 @ ASE'26"
         url: "/files/do-agent-skills-improve-agentic-code-review.pdf"
-      - label: "JAWs@ICSE'26"
+      - label: "JAWs @ ICSE'26"
   - name: "LLMs for pull request and code change analysis"
     papers:
       - label: "EMSE (major revision)"
