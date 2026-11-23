@@ -46,10 +46,10 @@ theme_colors:
   link                   : "#4e88c7"
   notice_background      : "#F2F3F3"
   notice_text            : "#24292F"
-  footer_line            : "#24292F"
+  footer_line            : "#005080"
   footer_text            : "#24292F"
   footer_background      : "#f2f3f3"
-  photo_frame            : "#24292F"
+  photo_frame            : ""          # empty = no frame around the photo
   pdf                    : "#D41153"
   arxiv                  : "#B31B1B"
   doi                    : "#FCB425"

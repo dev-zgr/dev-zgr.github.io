@@ -17,7 +17,7 @@
 /* Round profile photo with a frame (photo_frame in _config.yml) */
 .author__avatar img {
   border-radius: 50%;
-  border: 2px solid var(--site-photo-frame);
+  border: var(--site-photo-frame);
   padding: 0;
   background: #fff;
 }
