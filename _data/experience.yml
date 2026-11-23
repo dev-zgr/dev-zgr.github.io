@@ -9,15 +9,16 @@
       location: "Ankara, Turkey"
       dates: "Jun 2025 - Present"
       summary: >-
-        Software engineering research under the supervision of
+        Empirical software engineering research on AI-assisted code review and LLM-based software engineering tools
+        under the supervision of
         [Dr. Eray Tuzun](https://scholar.google.com/citations?hl=en&user=D4jovncAAAAJ&view_op=list_works&sortby=pubdate)
         (undergraduate researcher until June 2026).
       bullets:
-        - "Leading the group's industry collaborations with Turkish Airlines and Fibabanka."
-        - "Wrote the TUBITAK 1005 proposal (126E749) for an AI-supported code review platform based on our vision paper, which was accepted in 2026."
-        - "Mentoring three undergraduate researchers on agent skills for code review, tangled line localization and GUI bug detection."
-        - "Worked on LLM-based pull request-issue alignment classification with fine-tuning and on a vision paper about the future of code review."
-        - "Sub-reviewer for ICSE, FSE and ESEM with Dr. Tuzun."
+        - "Leading the group's industry collaborations with Turkish Airlines and Fibabanka and designing industrial case studies that empirically evaluate LLM-based tools for code review, GUI testing and requirement elicitation."
+        - "Wrote the funded TUBITAK 1005 proposal (126E749) of Dr. Tuzun's project on an AI-supported code review platform that builds on our vision paper on the future of code review."
+        - "Worked on fine-tuning LLMs to classify pull request-issue alignment, agent skills for agentic code review, localizing tangled lines with LLMs, an industrial case study of a custom code analysis tool and the vision paper."
+        - "Mentoring a senior design project team in the department and three undergraduate researchers who work with me on agent skills for code review, tangled line localization and GUI bug detection."
+        - "Reviewing submissions to ICSE 2025, ICSE 2026, FSE 2026 and ESEM 2026 as a sub-reviewer with Dr. Tuzun and reviewing group members' papers before submission."
 
     - title: "Undergraduate Researcher"
       org: "ANLAM-NET Research Lab, Ankara University"
@@ -26,10 +27,11 @@
       dates: "Sep 2024 - Jun 2026"
       summary: >-
         Natural language processing research under the supervision of
-        [Dr. Murat Karakus](https://scholar.google.com/citations?user=fGkZEUsAAAAJ&hl=en).
+        [Dr. Murat Karakus](https://scholar.google.com/citations?hl=en&user=fGkZEUsAAAAJ&view_op=list_works&sortby=pubdate).
       bullets:
-        - "Co-authored a paper on fine-tuning LLMs for sentiment and topic analysis in Turkish (IEEE Access)."
-        - "Took part in writing funded TUBITAK 1005 and Ankara University BAP proposals for LLM-based feedback analysis systems."
+        - "Co-authored a paper on fine-tuning Turkish LLMs for sentiment and topic analysis of airport reviews (IEEE Access)."
+        - "Took part in writing the funded TUBITAK 1005 (125E350) and Ankara University BAP (FLO-2025-3966) proposals for LLM-based feedback analysis systems."
+        - "Worked on the resulting voice-based feedback analysis project."
 
     - title: "Undergraduate Researcher"
       org: "CRADLE Lab, University of Michigan-Flint"
@@ -37,31 +39,31 @@
       location: "Remote"
       dates: "Sep 2023 - Dec 2025"
       summary: >-
-        Research on software-defined networks (SDN) and blockchain under the supervision of
-        [Dr. Suleyman Uludag](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en).
+        Research on software-defined networking (SDN) and blockchain under the supervision of
+        [Dr. Suleyman Uludag](https://scholar.google.com/citations?user=GOzfj9sAAAAJ&hl=en) through regular remote meetings.
       bullets:
         - "Co-authored a journal article on a smart parking system built on SDN and blockchain (JNCA)."
-        - "Formulated parking assignment as a fairness-driven integer optimization problem that is equivalent to parallel job scheduling (NP-hard) and evaluated heuristic solvers for it."
+        - "Formulated parking assignment as a fairness-driven integer optimization problem that is equivalent to parallel job scheduling (NP-hard) and evaluated heuristic solvers for it (local search, branch-and-bound and genetic search)."
 
 - group: "Industry Research Collaborations"
-  note: "Through the BILSEN Research Group at Bilkent University."
+  note: "Through the BILSEN Research Group at Bilkent University under the supervision of Dr. Eray Tuzun."
   entries:
     - title: "Collaboration Lead"
       org: "Turkish Airlines"
       url: "https://www.turkishairlines.com/en-int/"
       dates: "Jul 2026 - Present"
-      summary: "Agentic software engineering tools that we evaluate in the airline's development environment with its developers."
+      summary: "Leading BILSEN's collaboration with Turkish Airlines on LLM-based software engineering tools that are built for the airline's development environment and evaluated there empirically."
       bullets:
-        - "A pull request-issue alignment extension for the airline's code review process."
-        - "A multi-agent system that explores the airline's web applications and detects GUI bugs."
+        - "Developing a Bitbucket plugin that checks every pull request against its linked Jira issue with an LLM and classifies their alignment, which we will evaluate in a three-month mixed-method case study with the airline's developers."
+        - "Contributing to a multi-agent system that autonomously explores the airline's web applications to find GUI bugs and planning its industrial case study with the airline's testers."
 
     - title: "Collaboration Lead"
       org: "Fibabanka"
       url: "https://www.fibabanka.com.tr/en"
       dates: "Jun 2026 - Present"
-      summary: "Industrial case study of Filozof, an LLM-based requirement elicitation system developed and deployed by Fibabanka."
+      summary: "Leading an industrial case study of Filozof, an LLM-based requirement elicitation system developed and deployed by Fibabanka."
       bullets:
-        - "Assessing the requirement artifacts it generates against IEEE requirement standards and measuring its effect on the bank's requirement process."
+        - "Designed a mixed-method evaluation that studies the system in terms of requirement quality, time and effort, the requirement preparation process and user perception through expert ratings, an LLM judge, workflow data, surveys and interviews."
 
 - group: "Industry Experience"
   entries:
@@ -72,7 +74,8 @@
       dates: "Aug 2025 - Oct 2025"
       bullets:
         - "Developed antenna gain approximation algorithms based on azimuth and elevation radiation patterns."
-        - "Built a desktop simulation application for these algorithms in C++ and Qt."
+        - "Built a desktop simulation application in C++ and Qt to compute and visualize the antenna gain."
+        - "Gained practical experience in antenna modeling, numerical approximation and the validation of simulation results against theoretical expectations."
 
     - title: "Software Engineering Intern"
       org: "OBSS"
@@ -80,8 +83,9 @@
       location: "Ankara, Turkey"
       dates: "Jun 2025 - Aug 2025"
       bullets:
-        - "Developed an issue tracking module for a project management application with Java, Spring and React."
-        - "Implemented LDAP authentication and JWT-based authorization for the module."
+        - "Developed an issue tracking system for a project management application with a three-tier architecture."
+        - "Implemented the backend services in Java and Spring and the frontend in React."
+        - "Integrated LDAP authentication and JWT-based authorization for secure access control."
 
     - title: "Web Page Administrator (Intern)"
       org: "Ankara University"
@@ -97,4 +101,5 @@
       location: "Ankara, Turkey"
       dates: "Feb 2023 - Jun 2023"
       bullets:
-        - "Developed backend REST APIs for a learning management system."
+        - "Designed and implemented backend REST APIs for a learning management system."
+        - "Worked on server-side programming and database management for its web application."
