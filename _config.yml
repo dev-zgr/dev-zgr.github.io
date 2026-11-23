@@ -42,11 +42,11 @@ repository               : "dev-zgr/dev-zgr.github.io"
 #    pdf / arxiv / doi / code : icon colors of the publication links
 # -----------------------------------------------------------------------------
 theme_colors:
-  menu                   : "#00629B"
+  menu                   : "#24292F"
   link                   : "#4e88c7"
   notice_background      : "#E3EEF5"
   notice_text            : "#004B78"
-  footer_line            : "#005080"
+  footer_line            : "#24292F"
   footer_text            : "#6b7176"
   footer_background      : "#f2f3f3"
   photo_frame            : "#00629B"
