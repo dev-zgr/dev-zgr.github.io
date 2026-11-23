@@ -46,7 +46,7 @@ theme_colors:
   link                   : "#4e88c7"
   notice_background      : "#F2F3F3"
   notice_text            : "#494E52"
-  footer_line            : "#005080"
+  footer_line            : "#494E52"
   footer_text            : "#494E52"
   footer_background      : "#f2f3f3"
   photo_frame            : ""          # empty = no frame around the photo
