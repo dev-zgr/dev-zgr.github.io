@@ -34,11 +34,14 @@ repository               : "dev-zgr/dev-zgr.github.io"
 
 # -----------------------------------------------------------------------------
 #  Colors (hex codes). Change them here; nothing else needs to be edited.
-#    menu              : site title, top menu and status labels (blue of the paper figures)
+#    menu              : site title, top menu, status labels and the left line of the notice box
 #    link              : links in the text and on the publications page
 #    notice_background : background of the notice box on the home page
 #    notice_text       : text of the notice box
-#    footer_line       : line above the footer (line color of the paper figures)
+#    footer_line       : line above the footer
+#    footer_text       : text in the footer
+#    footer_background : background of the footer
+#    photo_frame       : frame around the photo (empty = no frame)
 #    pdf / arxiv / doi / code : icon colors of the publication links
 # -----------------------------------------------------------------------------
 theme_colors:
