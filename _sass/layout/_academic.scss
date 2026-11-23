@@ -306,3 +306,36 @@ body > #main {
 .page__footer footer {
   margin-bottom: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Phones and tablets (below the $large breakpoint, where the sidebar sits
+   above the page): bigger profile photo and a centered footer.
+   -------------------------------------------------------------------------- */
+@media (max-width: #{$large - 1px}) {
+  .author__avatar {
+    width: 84px;
+    vertical-align: middle;
+  }
+
+  .author__avatar img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+  }
+
+  .author__content {
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .site-footer__col--right {
+    justify-self: center;
+    text-align: center;
+  }
+}

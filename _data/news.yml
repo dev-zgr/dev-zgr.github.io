@@ -2,16 +2,16 @@
 # `text` accepts Markdown links: [text](https://...)
 
 - date: "Nov 2026"
-  text: "Our registered report on localizing tangled lines with LLMs and decision models was submitted to the SANER 2027 Registered Reports track."
+  text: "Our registered report on [localizing tangled lines with LLMs and decision models](/files/localizing-tangled-lines.pdf) was submitted to the IEEE SANER 2027 Registered Reports track."
 
 - date: "Nov 2026"
-  text: "Our TUBITAK (the Turkish equivalent of the U.S. NSF) research grant proposal on an AI-supported code review platform was accepted."
+  text: "The TUBITAK 1005 research grant proposal (126E749) on an AI-supported code review platform that I wrote with Dr. Eray Tuzun was accepted (TUBITAK is the Turkish equivalent of the U.S. NSF)."
 
 - date: "Oct 2026"
   text: "I presented our paper [Do Agent Skills Improve Agentic Code Review?](/files/do-agent-skills-improve-agentic-code-review.pdf) at the Journal Ahead Workshop (JAWs 2) at ASE 2026 in Munich."
 
 - date: "Oct 2026"
-  text: "Our paper on fine-tuning LLMs to classify PR-issue alignments received a major revision from Empirical Software Engineering (EMSE)."
+  text: "Our paper on fine-tuning LLMs to classify PR-issue alignments received a major revision from Springer Empirical Software Engineering (EMSE)."
 
 - date: "Aug 2026"
   text: "I started my M.Sc. in Computer Science at Bilkent University under the supervision of Dr. Eray Tuzun."
@@ -26,4 +26,4 @@
   text: "I presented the first version of our agentic code review vision at the Journal Ahead Workshop (JAWs) at ICSE 2026 in Rio de Janeiro."
 
 - date: "Dec 2025"
-  text: "Our paper on smart parking optimization with SDN and blockchain (SPOSChain) was accepted to the [Journal of Network and Computer Applications (JNCA)](https://doi.org/10.1016/j.jnca.2025.104414)."
+  text: "Our paper on smart parking optimization with SDN and blockchain (SPOSChain) was accepted to the [Elsevier Journal of Network and Computer Applications (JNCA)](https://doi.org/10.1016/j.jnca.2025.104414)."
