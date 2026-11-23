@@ -14,10 +14,10 @@
   border-bottom-color: var(--site-menu-color);
 }
 
-/* Round profile photo with a frame in the menu color (same on every page) */
+/* Round profile photo with a frame (photo_frame in _config.yml) */
 .author__avatar img {
   border-radius: 50%;
-  border: 2px solid var(--site-menu-color);
+  border: 2px solid var(--site-photo-frame);
   padding: 0;
   background: #fff;
 }
@@ -247,7 +247,7 @@
   gap: 1em 2em;
   font-size: $type-size-7;
   line-height: 1.6;
-  color: #6b7176;
+  color: var(--site-footer-text);
 
   a {
     color: inherit;
@@ -300,6 +300,7 @@ body > #main {
   margin-top: 3em;
   margin-bottom: 0;
   border-top: 2px solid var(--site-footer-line);
+  background-color: var(--site-footer-background);
 }
 
 .page__footer footer {

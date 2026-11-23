@@ -48,6 +48,9 @@
   --site-notice-background  : {{ site.theme_colors.notice_background | default: "#E3EEF5" }};
   --site-notice-text        : {{ site.theme_colors.notice_text | default: site.theme_colors.menu }};
   --site-footer-line        : {{ site.theme_colors.footer_line | default: "#005080" }};
+  --site-footer-text        : {{ site.theme_colors.footer_text | default: "#6b7176" }};
+  --site-footer-background  : {{ site.theme_colors.footer_background | default: "#f2f3f3" }};
+  --site-photo-frame        : {{ site.theme_colors.photo_frame | default: site.theme_colors.menu }};
   --site-pdf-color          : {{ site.theme_colors.pdf | default: "#D41153" }};
   --site-arxiv-color        : {{ site.theme_colors.arxiv | default: "#B31B1B" }};
   --site-doi-color          : {{ site.theme_colors.doi | default: "#FCB425" }};
