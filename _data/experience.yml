@@ -10,11 +10,11 @@
       dates: "Jun 2025 - Present"
       summary: >-
         Software engineering research under the supervision of
-        [Dr. Eray Tuzun](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)
+        [Dr. Eray Tuzun](https://scholar.google.com/citations?hl=en&user=D4jovncAAAAJ&view_op=list_works&sortby=pubdate)
         (undergraduate researcher until June 2026).
       bullets:
         - "Leading the group's industry collaborations with Turkish Airlines and Fibabanka."
-        - "Wrote the TUBITAK 1005 proposal for an AI-supported code review platform based on our vision paper, which was accepted in 2026."
+        - "Wrote the TUBITAK 1005 proposal (126E749) for an AI-supported code review platform based on our vision paper, which was accepted in 2026."
         - "Mentoring three undergraduate researchers on agent skills for code review, tangled line localization and GUI bug detection."
         - "Worked on LLM-based pull request-issue alignment classification with fine-tuning and on a vision paper about the future of code review."
         - "Sub-reviewer for ICSE, FSE and ESEM with Dr. Tuzun."
@@ -70,25 +70,31 @@
       url: "https://www.sage.tubitak.gov.tr/en"
       location: "Ankara, Turkey"
       dates: "Aug 2025 - Oct 2025"
-      summary: "Antenna gain approximation algorithms based on azimuth and elevation radiation patterns and a desktop simulation application in C++ and Qt."
+      bullets:
+        - "Developed antenna gain approximation algorithms based on azimuth and elevation radiation patterns."
+        - "Built a desktop simulation application for these algorithms in C++ and Qt."
 
     - title: "Software Engineering Intern"
       org: "OBSS"
       url: "https://obss.tech/en"
       location: "Ankara, Turkey"
       dates: "Jun 2025 - Aug 2025"
-      summary: "An issue tracking module for a project management application with Java, Spring and React, with LDAP authentication and JWT-based authorization."
+      bullets:
+        - "Developed an issue tracking module for a project management application with Java, Spring and React."
+        - "Implemented LDAP authentication and JWT-based authorization for the module."
 
     - title: "Web Page Administrator (Intern)"
       org: "Ankara University"
       url: "https://www.ankara.edu.tr/en/index"
       location: "Ankara, Turkey"
       dates: "Jan 2024 - Jun 2024"
-      summary: "Managed and maintained the website of the Department of Software Engineering."
+      bullets:
+        - "Managed and maintained the website of the Department of Software Engineering."
 
     - title: "Software Engineering Intern"
       org: "Obrosoft"
       url: "https://obrosoft.com"
       location: "Ankara, Turkey"
       dates: "Feb 2023 - Jun 2023"
-      summary: "Backend REST APIs for a learning management system."
+      bullets:
+        - "Developed backend REST APIs for a learning management system."

@@ -10,7 +10,7 @@
 
 - group: "Research Grants and Projects"
   items:
-    - label: "TUBITAK 1005 (2026, accepted)"
+    - label: "TUBITAK 1005 (126E749, 2026, accepted)"
       text: "Wrote the proposal of Dr. Eray Tuzun's project on an on-premise AI-supported code review platform that covers the whole pull request lifecycle."
     - label: "TUBITAK 1001 (125E371, 2026 - Present)"
       text: "Scholarship holder in the project *AI-Assisted Bug Reporting and Validity Analysis*."

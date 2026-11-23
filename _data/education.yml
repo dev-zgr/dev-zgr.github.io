@@ -3,13 +3,13 @@
 # details: bullet points; Markdown links are allowed.
 
 - institution: "Bilkent University"
-  url: "https://w3.cs.bilkent.edu.tr/en/"
+  url: "https://w3.cs.bilkent.edu.tr"
   logo: "bilkent.png"
   degree: "M.Sc. in Computer Science"
   location: "Ankara, Turkey"
   dates: "Aug 2026 - Expected Jun 2028"
   details:
-    - "Advisor: [Dr. Eray Tuzun](https://scholar.google.com/citations?user=D4jovncAAAAJ&hl=en)"
+    - "Advisor: [Dr. Eray Tuzun](https://scholar.google.com/citations?hl=en&user=D4jovncAAAAJ&view_op=list_works&sortby=pubdate)"
     - "Member of the [BILSEN](https://bilsen.cs.bilkent.edu.tr) research group"
     - "Scholarship holder in the TUBITAK 1001 project 125E371"
 
